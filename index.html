@@ -4,25 +4,49 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./asset/css/style.css" />
 		<title>Pet Registration</title>
 	</head>
-	<body>
-		<div>
-			<input type="text" id="petName" placeholder="Inserisci nome animale" />
+	<body class="bg-primary">
+		<div class="container mt-5">
+			<div class="row justify-content-center align-items-center g-3">
+				<div class="col-12 flex-grow-1">
+					<input type="text" class="form-control" id="petName" placeholder="Inserisci nome animale" />
+				</div>
+				<div class="col-12 flex-grow-1">
+					<input type="text" class="form-control" id="ownerName" placeholder="Inserisci nome proprietario" />
+				</div>
+				<div class="col-12 flex-grow-1">
+					<input type="text" class="form-control" id="species" placeholder="Inserisci specie" />
+				</div>
+				<div class="col-12 flex-grow-1">
+					<input type="text" class="form-control" id="breed" placeholder="Inserisci razza" />
+				</div>
+				<div class="container-fluid mt-3">
+					<div class="row">
+						<div class="col">
+							<button class="btn btn-secondary" id="add">Aggiungi</button>
+							<ul class="list-group" id="petList"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
-			<input type="text" id="ownerName" placeholder="Inserisci nome proprietario" />
-		</div>
-		<div>
-			<input type="text" id="species" placeholder="Inserisci specie" />
-		</div>
-		<div>
-			<input type="text" id="breed" placeholder="Inserisci razza" />
-		</div>
-		<button id="add">Aggiungi</button>
-		<ul id="petList"></ul>
-
-		<script src="./script.js"></script>
-		<script src="./script-2.js"></script>
+		<script src="./asset/js/script.jsscript.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="./asset/js/script-2.js"></script>
 	</body>
 </html>
